@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Reggae+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+body {
+    background-color: #eadf50;
+  }
+
+h1 {
+    color: #22262b; 
+    font-family: 'Paytone One', sans-serif;
+}
+  
+p {
+    background-color: #b32e30;
+    padding: 5%;
+    font-family: 'Reggae One';
+   
+    color: #fefefb;
+}

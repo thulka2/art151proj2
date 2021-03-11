@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="../styles.css">
+  <script src="https://kit.fontawesome.com/d9f17fec2b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<h4> PUTTING ON YOUR SHOES </h4>
+
+<p id="ExtraText">
+
+</p>
+
+<p id="secondaryBlurb">
+
+</p>
+
+<p> 
+
+  What shoes are you wearing? </p>
+
+<p>
+   <a href="4.html?option=1">  Reebok Classics.</a> </p>
+<p> <a href="4.html?option=2"> Yeezys. </a> 
+</p>
+<p> <a href="4.html?option=3"> Bean Boots.</a> 
+</p>
+
+<script>
+  let option = document.location.search.replace("?option=", "")
+  let result;
+  let src;
+  switch(option) {
+    case "1":
+      result = "At least you know the temperature now."
+      document.querySelector("#secondaryBlurb").innerHTML = "You threw on yesterday's clothes.";
+      // case 1 means the user is late and choose their own shoes so this influences their convo
+      let aTags = document.querySelectorAll('a');
+      aTags.forEach( (tag) => {
+        if (tag.getAttribute('href') == "4.html?option=1") {
+          tag.setAttribute('href', '4.html?option=4');
+        }
+        if (tag.getAttribute('href') == "4.html?option=2") {
+          tag.setAttribute('href', '4.html?option=5');
+        }
+        if (tag.getAttribute('href') == "4.html?option=3") {
+          tag.setAttribute('href', '4.html?option=6');
+        }
+      })
+      break;
+    case "2":
+      result = "Shoes can be washed."
+      // let aTags2 = document.querySelectorAll('a');
+      // aTags2.forEach( (tag) => {
+      //   tag.setAttribute('href', '4.html?option=7');
+      // })
+      break;
+  
+    default:
+      result = ""
+
+  }
+  document.querySelector("#ExtraText").innerHTML = result;
+</script>
+</body>
+</html> 

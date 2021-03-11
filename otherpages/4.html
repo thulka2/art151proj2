@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="../styles.css">
+  <script src="https://kit.fontawesome.com/d9f17fec2b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<h4> PUTTING ON YOUR SHOES </h4>
+<p id="outcome"> 
+
+  Well, it is probably best to check the weather then. What does the forecast read? </p>
+<img>
+<p> <a href="8.html?option=0"> Walk to school.</a> </p> 
+
+  <script>
+    let option = document.location.search.replace("?option=", "")
+    let result;
+    let src;
+    let id;
+    switch(option) {
+      case "4": 
+        // update outcome url to talk to girl and get her number
+        document.querySelector("a").setAttribute('href', '8.html?option=1');
+      case "1":
+        result = "It is nice out. You picked your <em> cleanest </em>&nbsp pair of kicks — Reebok Classics."
+        src = "../PngItem_1984536.png"
+        id = "img1"
+        break;
+      case "6":
+        // update outcome url to see girl and wuss outt
+        document.querySelector("a").setAttribute('href', '8.html?option=3');
+      case "3":
+        result = "It is storming pretty bad. You grab the staple of  <em>trad</em>&nbsp menswear — Bean Boots."
+        src = "../beanboots.png"
+        id = "img2"
+        break;
+      case "5":
+        // update outcome url to see girl and fail at getting her number
+        document.querySelector("a").setAttribute('href', '8.html?option=2');
+      case "2":
+        result = "Nothing will stand in your way of looking fresh. You whipped out the <em>flex</em>&nbsp pair — Yeezys."
+        src = "../yeezytransp.png"
+        id = "img3"
+        break;
+     
+      default:
+        result = "You broke the game. Good work."
+
+    }
+    document.querySelector("#outcome").innerHTML = result;
+    document.querySelector("img").setAttribute("src", src);
+    document.querySelector("img").setAttribute("id", id);
+
+    
+  </script>
+
+</body>
+</html> 

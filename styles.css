@@ -1,36 +1,100 @@
 @import url('https://fonts.googleapis.com/css2?family=Reggae+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
+
 body {
-    background-color: #22262b;
+    background-color: #2e2157;
   }
 
 h1, h4, #special {
-    color: #eadf50; 
+    color: #f9c80e; 
     font-family: 'Paytone One', sans-serif;
-    font-weight: 40;
+    font-size: 50px;
     margin-left: 5%;
-    margin-bottom: 0px;
-    
+    margin-bottom: 5px;
 
 }
 
 h1 {
-    font-size: 120px;
+    font-size: 100px;
+    margin-bottom: 100px;
 }
 
 h4 {
-    font-size: 40px;
+    font-size: 50px;
+    margin-bottom: 100px;
+    font-weight: light;
+    letter-spacing: 8px;
    
 }
   
 p {
-    padding: 5%;
-    font-family: 'Reggae One';
-    font-size: 20px;
+    margin-left: 5%;
+    font-family: 'Lalezar', cursive;
+    font-size: 24px;
     color: #fefefb;
+    margin-right: 5%;
 }
 
 a {
-    color: #b32e30;
+    font-size: 20px;
+    margin-left: 50px;
+    color: #ff3864;
+    padding: 5px;
     text-decoration: none;
+}
+
+#home {
+    font-size: 40px;
+    margin-left: 0px;
+    color: #ff3864;
+    padding: 5px;
+    text-decoration: none;
+}
+
+span 
+ {
+    color: #ff6c11;
+}
+
+a:hover, #home:hover
+{
+    color: #f706cf;
+
+}
+
+#star {
+    width: 10% !important;
+    color: black;
+}
+
+img {
+    margin-left: 50px;
+    
+}
+
+#img1 {
+    width: 30%;
+}
+
+
+#img2 {
+    width: 22%;
+}
+
+#img3 {
+    width: 32%;
+}
+
+#restart {
+    font-size: 40px;
+    margin-left: 0px;
+    color:  #ff6c11;
+    padding: 5px;
+    text-decoration: none;
+}
+
+#restart:hover {
+    color:  #7c09ff;
+
 }

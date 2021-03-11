@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="../styles.css">
+  <script src="https://kit.fontawesome.com/d9f17fec2b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<h4> PUTTING ON YOUR SHOES </h4>
+
+<div id="outcome0" style="display: none;">
+
+  <p>
+    You made it to class <span> late.</span>
+  </p>
+
+  <p>
+    The professor is fed up with your tardy and makes a scene in front of the class.
+
+  </p>
+
+  <p>
+    <em> "Why is it so hard to make it to class on time? I live an hour from campus and never have an issue being here at 9." </em>
+  </p>
+
+  <p>
+    Of course, deep down you know his dated 20th-century views are <span> foolish.</span>
+  </p>
+
+  <p>
+    He clearly must not realize kids hate college these days. Getting to class is a chore.
+  </p>
+
+  <p>
+    At least you put on your shoes.
+  </p>
+
+  <p>
+    You take out your laptop and carry on with your boring day.
+  </p>
+
+</div>
+
+<div id="outcome1" style="display: none;">
+
+  <p>
+    You made it to campus at <span> 8:52am.</span>
+  </p>
+
+  <p>
+    After entering the lecture building, you head over to grab something from the vending machine.
+  </p>
+
+  <p>
+    In front of you is the school's second most popular cheerleader. You definitely have a chance with her.
+  </p>
+
+  <p>
+    She steps aside.
+  </p>
+
+  <p>
+    <em> "Go ahead, my card is tweaking." </em>
+  </p>
+
+  <p>
+    You look at the unappealing options and settle on D6. You let the girl know that the <span> breakfast biscuit</span> is not the only snack on your mind and ask for her number.
+  </p>
+
+  <p>
+    <em> I am flattered. My number is three-one-two, nine-nine-six, seventy-one forty.</em>
+  </p>
+
+  <p> You jot her number and tell her you hope to see her again.</p>
+
+  <p>
+    You slowly walk to lecture, feeling good about yourself. 
+  </p>
+
+</div>
+
+<div id="outcome2" style="display: none;">
+
+  <p>
+    You made it to campus at <span> 8:52am.</span>
+  </p>
+
+  <p>
+    After entering the lecture building, you head over to grab something from the vending machine.
+  </p>
+
+  <p>
+    In front of you is the school's second most popular cheerleader. You definitely have a chance with her.
+  </p>
+
+  <p>
+    She steps aside.
+  </p>
+
+  <p>
+    <em> "Go ahead, my card is tweaking." </em>
+  </p>
+
+  <p>
+    You look at the unappealing options and settle on F4. You let the girl know that the <span>bag of chips</span> is not the only snack on your mind and ask for her number.
+  </p>
+
+  <p>
+    She gives you an odd stare and glances at your <span>Yeezys. </span>
+  </p>
+
+  <p>
+    <em> No thanks, I have a boyfriend. </em>
+  </p>
+
+  <p>
+    This cannot be true. You hesitate before telling her you have Kanye's latest and greatest.
+  </p>
+
+  <p>
+    She <span> laughs </span> and starts talking to her friends, who have been casually listening. 
+  </p>
+
+  <p>
+    As you walk away, you overhear them.
+  </p>
+  <p>
+    <em> "What a clown, Yeezys have been bricks for years." </em>
+  </p>
+
+  <p> You have a hard time getting over it and slowly walk away.</p>
+
+
+
+</div>
+
+<div id="outcome3" style="display: none;">
+
+  <p>
+    After lacing for five minutes, You made it to campus at <span> 8:56am.</span>
+  </p>
+
+  <p>
+    After entering the lecture building, you head over to grab something from the vending machine.
+  </p>
+
+  <p>
+    In front of you is NOT DONE
+  </p>
+
+  
+
+
+</div>
+
+<p ><a id="restart" href="../index.html"> Restart</a> </p> 
+
+  <script>
+    let option = document.location.search.replace("?option=", "")
+    let result;
+    let src;
+    let id;
+    switch(option) {
+      case "0":
+        //BASIC RESPONSE
+        document.querySelector("#outcome0").style.display = "block";
+        break; 
+      case "1":
+        // GET THE GIRL
+        document.querySelector("#outcome1").style.display = "block";
+        break;
+      case "3":
+        document.querySelector("#outcome3").style.display = "block";
+
+        break;
+      case "2":
+        document.querySelector("#outcome2").style.display = "block";
+
+        break;
+      default:
+        
+
+    }
+    
+
+    
+  </script>
+
+</body>
+</html> 
